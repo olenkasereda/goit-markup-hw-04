@@ -193,6 +193,7 @@ img {
 	color: #ffffff;
 	background-color: var(--brand-color);
 	cursor: pointer;
+	border: none;
 }
 
 .hero-title-button:hover,

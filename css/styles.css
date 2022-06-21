@@ -46,15 +46,16 @@ img {
 /* оформляем index.html */
 /*  */
 /* header */
-.header {
-	display: flex;
+.header-section {
 	border-bottom: 1px solid #ececec;
 	align-items: center;
 	height: 80px;
 }
+.header {
+	display: flex;
+}
 
 .container {
-	display: flex;
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -132,7 +133,11 @@ img {
 }
 
 .contacts-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	text-decoration: none;
+	width: 161px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--body-color);
@@ -146,7 +151,6 @@ img {
 .contacts-link-icon:hover,
 .contacts-link-icon:focus {
 	fill: currentColor;
-	margin-right: 10px;
 }
 
 /* hero */
@@ -368,12 +372,18 @@ img {
 	justify-content: center;
 	list-style: none;
 }
+.client-icon-list {
+	width: calc(100% / 6 - 30px);
+	height: 92px;
+}
 .client-icon-list + .client-icon-list {
 	margin-left: 30px;
 }
 .client-icon-link {
 	display: flex;
-	padding: 16px 32px;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
 	border: 1px solid var(--svg-color);
 	border-radius: 4px;
 	color: var(--svg-color);
@@ -397,8 +407,11 @@ img {
 	padding-bottom: 60px;
 	background-color: var(--footer-color);
 }
-
 .footer-page {
+	display: flex;
+	align-items: baseline;
+}
+.footer-address {
 	display: flex;
 	flex-direction: column;
 }
@@ -478,10 +491,13 @@ img {
 /*  */
 /*  оформляем portfolio.html */
 /*   */
-
+.portfolio-section {
+	padding: 94px 0;
+}
 .filters {
-	padding-top: 94px;
-	padding-bottom: 50px;
+	display: flex;
+
+	margin-bottom: 50px;
 	justify-content: center;
 	font-weight: 500;
 	font-size: 16px;
@@ -529,7 +545,7 @@ img {
 }
 
 .project-block {
-	padding-bottom: 94px;
+	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
 }

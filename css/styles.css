@@ -557,7 +557,8 @@ img {
 
 .card-set-item {
 	margin: calc(var(--indent) / 2);
-	flex-basis: calc(100% / var(--items) - var(--indent));
+	flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+	/* flex-basis: calc(100% / var(--items) - var(--indent)); */
 }
 .card-set-item:hover,
 .card-set-item:focus {
